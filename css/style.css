@@ -6,6 +6,25 @@
     box-sizing: border-box;
 }
 
+/* GENERICS */
+
+body {
+    font-size: 0.7rem;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
 /* COLORS */
 
 :root {
@@ -22,6 +41,7 @@
 
 .d-flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-column {
@@ -36,10 +56,25 @@
     overflow-y: scroll;
 }
 
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
 /* * STYLE */
 
 .txt-grey{
     color: var(--lightgrey);
+}
+
+.circle {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid var(--lightgrey);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.5rem;
+    line-height: 1rem;
 }
 
 /* UPPER CASE */
@@ -67,8 +102,61 @@ header {
 
 .sidebar {
     flex-basis: 230px;
-    height: 100vh;
+    height: calc (100vh - 100px);
     background-color: var(--black);
+    padding: 1rem;
+}
+
+
+#small-logo {
+    display: none;
+}
+
+.sidebar nav {
+    padding: 1.5rem 0;
+}
+
+.sidebar li {
+    padding: 0.5rem 0;
+}
+
+.sidebar a {
+    color: var(--lightgrey);
+}
+
+.box {
+    height: 10rem;
+}
+
+.sidebar h3 {
+    padding-bottom: 0.5rem;
+}
+
+.plus {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--lightgrey);
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.user {
+    border-top: 1px solid var(--lightgrey);
+    padding-top: 1rem;
+}
+
+.user img {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    object-fit: contain;
+
+    margin-right: 0.5rem;
 }
 
 /* FOOTER */
@@ -83,6 +171,27 @@ footer {
 
 @media screen and (max-width: 560px) {
     .sidebar {
-        flex-basis: 100px;
-    }    
+        flex-basis: 2rem;
+    }   
+    
+    #small-logo {
+        display: block;
+        width: 1.5rem;
+    }
+
+    #big-logo {
+        display: none;
+    }
+
+    .sidebar span,
+    .sidebar h3,
+    .box {
+        display: none;
+    }
+
+    .sidebar i {
+        font-size: 1rem;
+    }
+    
+
 }
