@@ -42,6 +42,7 @@ img {
 .d-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .flex-column {
@@ -93,9 +94,25 @@ main {
 /* HEADER */
 
 header {
-    height: 100px;
+    height: 70px;
     background-color: var(--black);
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.upgrade {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    width: fit-content;
+    margin-right: 0.5rem;
+
+}
+
+.upgrade a {
+    color: #FFF;
+    font-size: 0.5rem;
 }
 
 /* SIDEBAR */
