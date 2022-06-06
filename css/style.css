@@ -11,6 +11,11 @@
 body {
     font-size: 0.7rem;
     color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 1rem;
 }
 
 ul {
@@ -36,13 +41,10 @@ img {
 }
 
 /* UTILS */
-
 /* * LAYOUT */
 
 .d-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 .flex-column {
@@ -63,6 +65,14 @@ img {
 
 .pb-1 {
     padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.margin-neg {
+    margin: 0 -1rem;
 }
 
 .p-1 {
@@ -119,11 +129,49 @@ main {
     flex-grow: 1;
 }
 
+main nav li{
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/* * SECTIONS */
+
+section h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.col {
+    width: calc(100% / 6);
+    height: calc(100vw / 6);
+    padding: 1rem;
+}
+
+.card {
+    max-height: 100%;
+}
+
+#recently-played img,
+#creato-per img,
+#artisti-popolari img {
+    width: 100%;
+}
+
+#recently-played h3,
+#creato-per h3,
+#artisti-popolari h3 {
+    padding: 0.5rem 0;
+}
+
+#artisti-popolari img {
+    border-radius: 50%;
+}
+
 /* HEADER */
 
 header {
     height: 70px;
-    background-color: var(--black);
+    background-color: var(--darkblue);
     /* opacity: 0.5; */
     align-items: center;
     flex-direction: row-reverse;
@@ -150,8 +198,8 @@ header {
     height: calc (100vh - 100px);
     background-color: var(--black);
     padding: 1rem;
+    justify-content: space-between;
 }
-
 
 #small-logo {
     display: none;
@@ -165,7 +213,8 @@ header {
     padding: 0.5rem 0;
 }
 
-.sidebar a {
+.sidebar a,
+main nav a {
     color: var(--lightgrey);
 }
 
@@ -312,6 +361,4 @@ footer article img {
     .sidebar i {
         font-size: 1rem;
     }
-    
-
 }
