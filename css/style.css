@@ -10,7 +10,7 @@
 
 body {
     font-size: 0.7rem;
-
+    color: #FFF;
 }
 
 ul {
@@ -53,6 +53,10 @@ img {
     flex-shrink: 0;
 }
 
+.p-relative {
+    position: relative;
+}
+
 .scrollbar {
     overflow-y: scroll;
 }
@@ -61,10 +65,26 @@ img {
     padding-bottom: 1rem;
 }
 
+.p-1 {
+    padding: 1rem;
+}
+
+.w33 {
+    width: calc(100% / 3);
+}
+
 /* * STYLE */
 
 .txt-grey{
     color: var(--lightgrey);
+}
+
+.txt-white{
+    color: #FFF;
+}
+
+.txt-center {
+    text-align: center;
 }
 
 .circle {
@@ -78,10 +98,18 @@ img {
     line-height: 1rem;
 }
 
+.big-circle {
+    border: 2px solid #FFF;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+
+}
+
 /* UPPER CASE */
 
 .upper-case {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: var(--blue);
 }
 
@@ -179,10 +207,85 @@ header {
 /* FOOTER */
 
 footer {
-    height: 100px;
+    height: 80px;
     background-color: var(--grey);
+    padding: 1rem;
 }
 
+.player i {
+    font-size: 1rem;
+    /* margin-right: 1.5rem; */
+}
+
+.player {
+    justify-content: space-around;
+}
+
+/* ! DA RIVEDERE */
+
+.fa-play {
+    line-height: 1.3rem;
+}
+
+.timeline {
+    display: inline-block;
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #5A5A5A;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.listened {
+    width: 10%;
+    background-color: #FFF;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer article img {
+    width: 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.song-description {
+    line-height: 1.5rem;
+    padding-left: 3.5rem;
+}
+
+.add {
+    position: absolute;
+    left: 15rem;
+    top: 0;
+    font-size: 2rem;
+}
+
+.volume-range {
+    display: inline-block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: #5A5A5A;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.volume-level {
+    width: 10%;
+    background-color: #FFF;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.volume {
+    align-self: center;
+}
+
+.volume i {
+    margin-right: 0.5rem;
+}
 
 /* MEDIA QUERIES */
 
